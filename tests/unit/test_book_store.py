@@ -5,7 +5,6 @@ import src.book_store as book_store
 @pytest.mark.unit
 def test_book_store_add_book__mock(mocker):
     # Arrange
-
     book1 = mocker.sentinel.book
     book_constructor = mocker.patch.object(
         book_store, "Book", return_value=book1
@@ -31,7 +30,7 @@ def test_book_store_toggle_on__mock(mocker):
     favorites.books = []
 
     # Act
-    bokhandel.toggle_favorite(0)
+    bokhandel.toggle_favorite(book.book_id)
 
     # Assert
     favorites.add_book_to_favorites.assert_called_once_with(book)
@@ -49,7 +48,7 @@ def test_book_store_toggle_off__mock(mocker):
     favorites.books = [book]
 
     # Act
-    store.toggle_favorite(0)
+    store.toggle_favorite(book.book_id)
 
     # Assert
     favorites.remove_book_from_favorites.assert_called_once_with(book)
