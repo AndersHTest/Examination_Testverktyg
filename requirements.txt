@@ -2,3 +2,4 @@ behave
 pytest
 playwright
 pytest-playwright
+pytest-mock
