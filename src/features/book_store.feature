@@ -1,42 +1,45 @@
 #noinspection CucumberUndefinedStep
-Feature Book store
-  Scenario:
-    Given: Du har länken till Läslistan
-    When: Du klickar på länken
-    Then: Katalog-knappen är inaktiverad
-    And: De andra tre knapparna är aktiva
-    And: Det finns ett h2-element med texten "Välkommen!"
-    And: Det finns en paragraf med texten: "Sidan för dig som gillar att läsa. Välj dina favoriter."
+Feature: Startsida
+  Scenario: Kontrollera startsida
+    # Som en användare på Läslistan
+    # vill jag att startsidan är katalogsidan
+    # så att jag kan välja mina favoritböcker
+    Given Du är på Läslistans startsida
+    Then Katalog-knappen är inaktiverad
+    And De andra tre knapparna är aktiva
+    And Det finns ett h2-element med texten "Välkommen!"
+    And Det finns en paragraf med texten: "Sidan för dig som gillar att läsa. Välj dina favoriter."
 
 
-  Scenario:
-    Given: Du har länken till Läslistan
-    When: Du hovrar över din favoritbok och klickar på hjärtknappen
-    And: Du klickar på knappen "Mina böcker"
-    Then: Din favoritbok finns listad här
+  Scenario: Lägg till favoritböcker
+    # Som en användare på Läslistan
+    # vill jag kunna lägga till mina favoritböcker
+    # så att jag lätt kan komma åt och se dom under "Mina böcker"
+    Given Du är på Läslistans startsida
+    When Du klickar på hjärtknappen till vänster om boken du vill favoritmarkera
+    And Du klickar på knappen "Mina Böcker"
+    Then Din favoritbok finns listad på sidan
 
 
-  Scenario:
-    Given: Du har länken till Läslistan
-    When: Du klickar på knappen "Lägg till bok"
-    Then: Knappen lägg till bok är inaktiverad
+  Scenario: Lägg till en ny bok i katalogen
+    # Som en användare på Läslistan
+    # vill jag kunna lägga till en bok som inte finns tillagd i "Katalog"
+    # så att jag kan se den i katalogen.
+    Given Du är på Läslistans startsida
+    When Du klickar på knappen "Lägg till bok"
+    And du fyller i titel och författare
+    And Du klickar på knappen "Lägg till ny bok"
+    And Du klickar på knappen "Katalog"
+    Then Ska boken finnas listad i katalogen
 
 
-  Scenario:
-    Given: Du har länken till Läslistan
-    When: Du klickar på knappen "Lägg till bok"
-    And: Du fyller i titel och författare
-    And: Klickar på "Lägg till bok"
-    And: Klickar på knappen "Katalog"
-    Then: Boken finns listad i katalogen
-
-
-  Scenario:
-    Given: Du har länken till Läslistan
-    When: Du klickar på knappen "Statistik"
-    Then: Finns det information om hur många böcker som finns tillgängliga
-    And: Du kan se hur många böcker som har favoritmarkerats.
-
-
-
-
+  Scenario: Visa statistik över favoritmarkerade böcker
+    # Som en användare på Läslistan
+    # vill jag kunna se statistik över hur många böcker
+    # som finns och som hur många som är favoritmarkerade
+    # så att jag kan se hur många böcker
+    # som finns och hur många favoriter som har sparats
+    Given Du är på Läslistans startsida
+    When Du klickar på knappen "Statistik"
+    Then Verifiera att du kan se hur många böcker som är tillgängliga i katalogen
+    And Verifiera att du kan se hur många böcker som har favoritmarkerats

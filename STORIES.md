@@ -22,12 +22,12 @@ Som en användare på Läslistan <br>vill jag kunna lägga till mina favoritböc
 
 ### User Story x:
 <pre>
-Som en användare på Läslistan <br>vill jag kunna lägga till en bok som inte finns tillagd i "Katalog" <br>så att jag kan se den i katalogen.
+Som en användare på Läslistan <br>vill jag kunna lägga till en ny bok <br>så att jag kan se den i katalogen.
 </pre>
-* Surfa in på Läslistan
+* Gå till Läslistans startsida
 * Klicka på knappen "Lägg till bok"
 * Fyll i titel och författare
-* Klicka på knappen "Lägg till bok"
+* Klicka på knappen "Lägg till ny bok"
 * Klicka på knappen "Katalog"
 * Verifiera att boken finns listad i katalogen
 
@@ -37,7 +37,6 @@ Som en användare på Läslistan <br>vill jag kunna lägga till en bok som inte 
 Som en användare på Läslistan <br>vill jag kunna se statistik över hur många böcker som är favoritmarkerade <br>så att jag kan se hur många böcker som finns och hur många favoriter som sparats.
 </pre>
 
-* steg
 * Surfa in på Läslistan
 * Klicka på knappen "Statistik"
 * Verifiera att det visas hur många böcker som är tillgängliga i katalogen.
