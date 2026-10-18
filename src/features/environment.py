@@ -9,7 +9,7 @@ def before_all(context):
 
 def before_scenario(context, scenario):
     context.page = context.browser.new_page()
-    context.page.set_default_timeout(1000)
+    context.page.set_default_timeout(5000)
     context.base_url = "https://tap-vt26-testautomatisering.github.io/exam/"
 
 

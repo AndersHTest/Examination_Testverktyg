@@ -30,4 +30,4 @@ class BasePage:
         self.favorite_count = page.get_by_test_id("stars-count")
 
     def navigate(self):
-        self.page.goto("https://tap-vt26-testautomatisering.github.io/exam/", timeout=5_000)
+        self.page.goto("https://tap-vt26-testautomatisering.github.io/exam/")
