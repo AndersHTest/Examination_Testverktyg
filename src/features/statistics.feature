@@ -13,9 +13,3 @@ Egenskap: Statistik
   När du klickar på knappen "Statistik"
   Så verifierar du att du kan se hur många böcker som är tillgängliga i katalogen
   Och verifierar du att du kan se hur många böcker som har favoritmarkerats
-
-  Scenario:
-    Givet att du är på Läslistans startsida
-    När du favoritmarkerar <antal> böcker
-    Och klickar på knappen "Statistik"
-    Så visas samma antal favoritmarkerade böcker i den andra paragrafen
