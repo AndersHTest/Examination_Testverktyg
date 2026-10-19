@@ -34,11 +34,11 @@ project
 │               step_statistics.py 
 │   
 └───tests
-│   │
-│   └───integration
-│   │       test_book_store_fav.py
-│   │
-│   └───unit
-│           test_book_store.py
-│           test_fav_books.py
+    │
+    └───integration
+    │       test_book_store_fav.py
+    │
+    └───unit
+            test_book_store.py
+            test_fav_books.py
 ```
