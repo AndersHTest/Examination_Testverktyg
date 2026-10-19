@@ -2,6 +2,8 @@ import pytest
 import src.book_store as book_store
 
 
+# Patchar Book så att add_book() returnerar min fejkade bok.
+# Lägger till en bok och verifierar att den är tillagd i katalogen.
 @pytest.mark.unit
 def test_book_store_add_book__mock(anders_bokhandel, mocker):
     # Arrange
