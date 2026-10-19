@@ -1,4 +1,4 @@
-from behave import given as givet, when as när, then as så
+from behave import when as när, then as så
 from playwright.sync_api import expect
 
 
