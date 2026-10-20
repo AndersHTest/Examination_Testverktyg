@@ -13,6 +13,9 @@ def step_impl_navigera(context):
 @så(u'ser jag elementen_a')
 def step_impl_verifiera_element_1(context):
     expect(context.base_page.bild).to_be_visible()
+    expect(context.base_page.add_book).to_be_enabled()
+    expect(context.base_page.my_books).to_be_enabled()
+    expect(context.base_page.statistics).to_be_enabled()
     expect(context.base_page.heading).to_be_visible()
     expect(context.base_page.paragraph).to_be_visible()
 
@@ -25,7 +28,10 @@ def step_impl_navigera_2(context):
 @så(u'ser jag elementen_b')
 def step_impl_verifiera_element_2(context):
     expect(context.base_page.bild).to_be_visible()
+    expect(context.base_page.catalog).to_be_enabled()
     expect(context.base_page.add_book).to_be_disabled()
+    expect(context.base_page.my_books).to_be_enabled()
+    expect(context.base_page.statistics).to_be_enabled()
     expect(context.base_page.heading).to_be_visible()
     expect(context.base_page.fill_title).to_be_visible()
     expect(context.base_page.fill_author).to_be_visible()
@@ -42,7 +48,10 @@ def step_impl_navigera_3(context):
 @så(u'ser jag elementen_c')
 def step_impl_verifiera_element_3(context):
     expect(context.base_page.bild).to_be_visible()
+    expect(context.base_page.catalog).to_be_enabled()
+    expect(context.base_page.add_book).to_be_enabled()
     expect(context.base_page.my_books).to_be_disabled()
+    expect(context.base_page.statistics).to_be_enabled()
     expect(context.base_page.heading).to_be_visible()
     expect(context.base_page.book_list).to_be_attached()
     expect(context.base_page.paragraph_1).to_be_visible()
@@ -56,6 +65,9 @@ def step_impl_navigera_4(context):
 @så(u'ser jag elementen_d')
 def step_impl_verifiera_element_4(context):
     expect(context.base_page.bild).to_be_visible()
+    expect(context.base_page.catalog).to_be_enabled()
+    expect(context.base_page.add_book).to_be_enabled()
+    expect(context.base_page.my_books).to_be_enabled()
     expect(context.base_page.statistics).to_be_disabled()
     expect(context.base_page.heading).to_be_visible()
     expect(context.base_page.book_count).to_be_visible()
