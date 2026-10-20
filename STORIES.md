@@ -1,6 +1,8 @@
 ### User Story x:
 <pre>
-Som en användare på Läslistan <br>vill jag att den första sidan som visas är katalogsidan <br>så att jag kan välja mina favoritböcker.
+Som en användare på Läslistan
+vill jag att den första sidan som visas är katalogsidan
+så att jag kan välja mina favoritböcker.
 </pre>
 * Surfa in på Läslistan
 * Verifiera att katalogknappen är disabled.
@@ -12,7 +14,9 @@ Som en användare på Läslistan <br>vill jag att den första sidan som visas ä
 
 ### User Story x:
 <pre>
-Som en användare på Läslistan <br>vill jag kunna lägga till mina favoritböcker <br>så att jag lätt kan komma åt och se dom under "Mina böcker".
+Som en användare på Läslistan
+vill jag kunna lägga till mina favoritböcker 
+så att jag lätt kan komma åt och se dom under "Mina böcker".
 </pre>
 * Surfa in på Läslistan
 * Klicka på hjärtknappen till vänster om dina favoritböcker
@@ -22,9 +26,11 @@ Som en användare på Läslistan <br>vill jag kunna lägga till mina favoritböc
 
 ### User Story x:
 <pre>
-Som en användare på Läslistan <br>vill jag kunna lägga till en ny bok <br>så att jag kan se den i katalogen.
+Som en användare på Läslistan 
+vill jag kunna lägga till en ny bok
+så att jag kan se den i katalogen.
 </pre>
-* Gå till Läslistans startsida
+* Surfa in på Läslistan
 * Klicka på knappen "Lägg till bok"
 * Fyll i titel och författare
 * Klicka på knappen "Lägg till ny bok"
@@ -34,7 +40,9 @@ Som en användare på Läslistan <br>vill jag kunna lägga till en ny bok <br>s�
 
 ### User Story x:
 <pre>
-Som en användare på Läslistan <br>vill jag kunna se statistik över hur många böcker som är favoritmarkerade <br>så att jag kan se hur många böcker som finns och hur många favoriter som sparats.
+Som en användare på Läslistan
+vill jag kunna se statistik över hur många böcker som är favoritmarkerade
+så att jag kan se hur många böcker som finns och hur många favoriter som sparats.
 </pre>
 
 * Surfa in på Läslistan
@@ -42,3 +50,14 @@ Som en användare på Läslistan <br>vill jag kunna se statistik över hur mång
 * Verifiera att det visas hur många böcker som är tillgängliga i katalogen.
 * Verifiera att du kan se hur många böcker som har favoritmarkerats.
 
+### User Story x:
+<pre>
+Som en användare på Läslistan
+vill jag kunna navigera på hemsidan utan problem
+så att jag enkelt kan se alla vyer
+</pre>
+
+* Surfa in på Läslistan
+* Klicka på den vyn du vill se
+* Verifiera att du är på rätt vy med hjälp av elementen på sidan
+* Upprepa processen med vyerna 'Lägg till bok', 'Mina Böcker' och 'Statistik'
