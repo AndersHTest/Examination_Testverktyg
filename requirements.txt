@@ -3,3 +3,4 @@ pytest
 playwright
 pytest-playwright
 pytest-mock
+flake8

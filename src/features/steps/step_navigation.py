@@ -12,6 +12,7 @@ def step_impl_navigera(context):
 
 @så(u'ser jag elementen_a')
 def step_impl_verifiera_element_1(context):
+    expect(context.page).to_have_title("Läslistan")
     expect(context.base_page.bild).to_be_visible()
     expect(context.base_page.add_book).to_be_enabled()
     expect(context.base_page.my_books).to_be_enabled()
@@ -27,6 +28,7 @@ def step_impl_navigera_2(context):
 
 @så(u'ser jag elementen_b')
 def step_impl_verifiera_element_2(context):
+    expect(context.page).to_have_title("Läslistan")
     expect(context.base_page.bild).to_be_visible()
     expect(context.base_page.catalog).to_be_enabled()
     expect(context.base_page.add_book).to_be_disabled()
@@ -47,6 +49,7 @@ def step_impl_navigera_3(context):
 
 @så(u'ser jag elementen_c')
 def step_impl_verifiera_element_3(context):
+    expect(context.page).to_have_title("Läslistan")
     expect(context.base_page.bild).to_be_visible()
     expect(context.base_page.catalog).to_be_enabled()
     expect(context.base_page.add_book).to_be_enabled()
@@ -59,11 +62,13 @@ def step_impl_verifiera_element_3(context):
 
 @när(u'jag klickar på "Statistik"')
 def step_impl_navigera_4(context):
+    expect(context.page).to_have_title("Läslistan")
     context.base_page.statistics.click()
 
 
 @så(u'ser jag elementen_d')
 def step_impl_verifiera_element_4(context):
+    expect(context.page).to_have_title("Läslistan")
     expect(context.base_page.bild).to_be_visible()
     expect(context.base_page.catalog).to_be_enabled()
     expect(context.base_page.add_book).to_be_enabled()
