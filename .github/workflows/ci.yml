@@ -1,4 +1,4 @@
-name: CI Examination
+name: CI workflow - Examination
 
 on:
   push:

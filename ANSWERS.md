@@ -2,12 +2,17 @@
 
 1. Vad är skillnaden mellan enhetstest, integrationstest, regressionstest och prestandatest?
 <pre>
-<b>Enhetstest</b> skapas normalt sett direkt efter att en funktion eller en metod är skapad.
-Det är oftast utvecklaren själv som skriver ett enhetstest.
-Med ett enhetstest vill man testa funktionen eller metoden isolerat, utan att blanda in andra funktioner och metoder.
+<b>Enhetstest</b> skapas normalt sett i samband med att en funktion eller en metod är skapas.
+Det är antingen utvecklaren själv eller en testare som skriver enhetstestet.
+Med ett enhetstest vill man testa funktionen eller metoden isolerat, utan att blanda in annan kod.
+Om funktionen kräver utomstående kod för att fungera kan man fejka eller mocka de utomstående delarna,
+för att få den input man behöver för att köra funktionen. Testet blir då isolerat till endast den
+funktionen man testar, vilket är hela syftet med ett enhetstest. Om ett enhetstest går igenom som det ska
+men någonting felar i ett integrationstest så har man antingen missuppfattat vilken input man ska få från andra
+funktioner eller så ligger felet troligtvis i de utomstående funktionera. Detta kan göras med olika metoder t.ex TDD, eller BDD.
 
 <b>integrationstest</b> skapas normalt sett av testare. Man testar att funktioner och/eller metoder
-fungerar som de ska tillsammans med andra funktioner/metoder.
+fungerar som de ska tillsammans med andra funktioner/metoder. Detta kan göras med olika metoder t.ex TDD, eller BDD.
 
 <b>Regressionstest</b> är en samling av grundläggande enhetstest och integrationstest.
 Testerna körs kontinuerligt, men främst efter att ny kod har introducerats.
@@ -53,11 +58,11 @@ Om du fick välja förutsättningslöst, vilka sorters tester skulle du vilja an
 Jag hade velat använda TDD för backend och skriva både enhetstester och integrationstester med hjälp av denna metod.
 För frontend hade jag velat kombinera BDD och playwright för att i BDD tydligt kunna visa mina testscenarier och teststeg.
 Playwright vill jag använda för att det är ett smidigt verktyg för att lokalisera olika element på en webbsida,
-och därmed kunna navigera på en hemsida 'som en användare'.
+och därmed kunna navigera på en hemsida 'som en användare'. Jag tycker att det är sunt att använda flera olika tekniker och verktyg vid test.
 Under uppbyggnadsfasen eller vid felsökning kan man med fördel köra testen i slowmotion och välja att visa webbläsarfönstret så att man kan följa testen visuellt.
 När testen är implementerade körs testen till fördel i bakgrunden.
 I tilläg vill jag använda page-filer (POM - Page Object Model) där man kan spara ner och återanvända lokaliserare.
 Vid en ändring av ett element på hemsidan krävs ofta bara en motsvarande ändring på lokaliseraren i page-filen för att hålla testen intakta.
 Utan page-filen blir man tvungen att ändra lokaliseraren på alla ställen den används, direkt i testerna.
-När ändringar på hemsidan görs kan page-filen spara mycket tid när man ska underhålla sina tester.
+När ändringar på hemsidan görs kan man spara mycket tid när man ska underhålla sina tester om man använder sig av en page-fil.
 </pre>
