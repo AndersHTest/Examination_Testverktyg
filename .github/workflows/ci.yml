@@ -2,7 +2,7 @@ name: CI Examination
 
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
