@@ -2,9 +2,10 @@
 # language: sv
 
 
-# User Story x
+# User Story: Navigering
 Egenskap: Navigering
   Scenariomall: Testa navigering
+    # User Story: Navigering
     # Som en användare på Läslistan
     # vill jag kunna navigera på hemsidan utan problem
     # så att jag enkelt kan se alla vyer
@@ -12,10 +13,9 @@ Egenskap: Navigering
     När jag klickar på <vy>
     Så ser jag <elementen>
 
-
-    Exempel:
-    |vy|elementen|
-    |"Katalog"|elementen_a|
-    |"Lägg till bok"|elementen_b|
-    |"Mina Böcker"|elementen_c|
-    |"Statistik"|elementen_d|
+  Exempel:
+  |vy|elementen|
+  |"Katalog"|elementen_a|
+  |"Lägg till bok"|elementen_b|
+  |"Mina Böcker"|elementen_c|
+  |"Statistik"|elementen_d|

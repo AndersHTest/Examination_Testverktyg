@@ -1,8 +1,10 @@
 #noinspection CucumberUndefinedStep
 # language: sv
 
-Egenskap: Lägg till en ny bok
-  Scenario: Lägg till en ny bok i katalogen
+
+Egenskap: Lägg till bok
+  Scenario: Lägg till ny bok
+  # User Story: Lägg till ny bok
   # Som en användare på Läslistan
   # vill jag kunna lägga till en bok som inte finns tillagd i "Katalog"
   # så att jag kan se den i katalogen.

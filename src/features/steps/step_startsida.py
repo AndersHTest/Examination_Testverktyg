@@ -3,7 +3,7 @@ from playwright.sync_api import expect
 from src.features.pages.base_page import BasePage
 
 
-# User Story 1
+# User Story: Startsida
 @givet(u'att du är på Läslistans startsida')
 def step_impl_start_page(context):
     base_page = BasePage(context.page)
@@ -33,18 +33,30 @@ def step_impl_paragraph_1(context):
     expect(context.base_page.paragraph).to_be_visible()
 
 
-# User Story 2
-@när(u'du klickar på hjärtknappen till vänster om boken du vill favoritmarkera')
-def step_impl_click_fav(context):
-    context.base_page.add_favorite_pw.click()
+# User Story: Klicka på hjärtknappen flera gånger
+@när(u'du klickar på hjärtknappen 1 gång(er)')
+def step_impl_klicka_1(context):
+    context.base_page.book_wyt.click()
 
 
-@när(u'du klickar på knappen "Mina Böcker"')
-def step_impl_my_books(context):
-    context.base_page.my_books.click()
+@så(u'ser du att det läggs till ett hjärta')
+def step_impl_hjärta(context):
+    expect(context.base_page.book_wyt).to_have_class("star selected")
 
 
-@så(u'är din favoritbok listad på sidan')
-def step_impl_view_favorites(context):
-    expect(context.base_page.list_object).to_be_attached()
-    expect(context.base_page.list_object_pw).to_be_visible()
+@när(u'du klickar på hjärtknappen 2 gång(er)')
+def step_impl_klicka_2(context):
+    context.base_page.book_wyt.click()
+    context.base_page.book_wyt.click()
+
+
+@så(u'ser du att hjärtat tas bort')
+def step_impl_hjärta_bort(context):
+    expect(context.base_page.book_wyt).to_have_class("star")
+
+
+@när(u'du klickar på hjärtknappen 3 gång(er)')
+def step_impl_hjärta_1(context):
+    context.base_page.book_wyt.click()
+    context.base_page.book_wyt.click()
+    context.base_page.book_wyt.click()
