@@ -9,7 +9,8 @@
 <pre>
 Kör 'pytest' i terminalen för att köra TDD-tester
 Kör 'behave --format progress3' i terminalen för att köra BDD-tester
-Kör 'flake8' i terminalen för att testa linting
+(Alternativt 'behave --format plain' för att skriva ut alla steg)
+Kör 'flake8 src tests' i terminalen för att analysera källkod (linting)
 </pre>
 
 ### Filträd

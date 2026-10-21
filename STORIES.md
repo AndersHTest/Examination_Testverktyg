@@ -52,8 +52,8 @@ så att jag kan se den i katalogen.
 ### User Story: Statistik
 <pre>
 Som en användare på Läslistan
-vill jag kunna se statistik över hur många böcker som är favoritmarkerade
-så att jag kan se hur många böcker som finns och hur många favoriter som sparats.
+vill jag kunna se statistik över hur många böcker som finns och hur många som är favoritmarkerade
+så att jag kan se hur många böcker som finns och hur många favoriter som favoritmarkerats.
 </pre>
 
 * Surfa in på Läslistan

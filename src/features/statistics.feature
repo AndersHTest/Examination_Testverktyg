@@ -5,9 +5,9 @@ Egenskap: Statistik
   # User Story: Statistik
   # Som en användare på Läslistan
   # vill jag kunna se statistik över hur många böcker
-  # som finns och som hur många som är favoritmarkerade
+  # som finns och hur många som är favoritmarkerade
   # så att jag kan se hur många böcker
-  # som finns och hur många favoriter som har sparats
+  # som finns och hur många favoriter som har favoritmarkerats
 
   Givet att du är på Läslistans startsida
   När du klickar på knappen "Statistik"
